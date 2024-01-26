@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ты знаешь что делать</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Ты знаешь что делать</h1>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Напиши волшебную фразу" class="jsNegganInput">
+            </div>
+            <div class="hidden-neggan jsNeggan">
+                <img src="joker.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        var neggan = document.querySelector('.jsNeggan')
+        var input = document.querySelector('.jsNegganInput')
+        input.addEventListener('input', function () {
+            if (this.value == "Хуй во рту") {
+                neggan.classList.add('gotovSosat')
+            } else {
+                neggan.classList.remove('gotovSosat')
+            }
+        })
+    </script>
+</body>
+
+</html>
