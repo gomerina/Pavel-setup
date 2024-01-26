@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     line-height: normal;
+    box-sizing: border-box;
 }
 
 body {
@@ -51,4 +52,14 @@ input {
 h1 {
     font-size: 46px;
     margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        padding: 50px 0;
+    }
 }
